@@ -1,0 +1,55 @@
+.footer_container {
+    position: relative;
+}
+
+.foter_container>hr {
+    border: 1px solid var(--lightgray);
+}
+
+.footer {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+}
+
+.social_links {
+    display: flex;
+    gap: 4rem;
+}
+
+.social_links img {
+    width: 2rem;
+    height: 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.logo_f img {
+    width: 10rem;
+}
+
+.footer_blur_1 {
+    bottom: 0;
+    right: 17%;
+    width: 33rem;
+    height: 14rem;
+    background: red;
+}
+
+.footer_blur_2 {
+    bottom: 0;
+    left: 17%;
+    width: 33rem;
+    height: 14rem;
+    background: rgba(255, 115, 0);
+}
+
+#Github:hover,
+#Instagram:hover,
+#LinkedIn:hover {
+    transform: scale(1.2);
+}

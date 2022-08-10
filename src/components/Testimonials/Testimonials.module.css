@@ -1,0 +1,122 @@
+.testimonials {
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.left_t {
+    display: flex;
+    flex: 1 1;
+    gap: 2rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.left_t :nth-child(1) {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.left_t :nth-child(2),
+.left_t :nth-child(3) {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.left_t :nth-child(4) {
+    text-transform: uppercase;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.right_t {
+    flex: 1;
+    position: relative;
+}
+
+.right_t>img {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+
+.right_t>:nth-child(1) {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+
+.right_t>:nth-child(2) {
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    background: var(--planCard);
+    top: 4rem;
+    right: 7rem;
+}
+
+.arrows {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+
+.arrows>img {
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .left_t>:nth-child(2),
+    .left_t>:nth-child(3) {
+        font-size: xx-large;
+    }
+
+    .right_t {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .right_t div {
+        position: relative;
+        display: none;
+    }
+
+    .right_t img {
+        right: 0;
+        position: relative;
+        align-items: center;
+    }
+
+    .right_t :last-child {
+        display: inline;
+        bottom: 0;
+        left: 0;
+    }
+
+    .arrows img {
+        display: inline;
+        margin: 5px;
+        position: absolute;
+        top: 1.5rem;
+    }
+}

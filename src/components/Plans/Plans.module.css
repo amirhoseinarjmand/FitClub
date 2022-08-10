@@ -1,0 +1,166 @@
+.plans_container {
+    color: #fff;
+    margin-top: 4rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans_blur_1 {
+    width: 32rem;
+    height: 23rem;
+    top: 12rem;
+    left: 3rem;
+}
+
+.plans_blur_2 {
+    width: 32rem;
+    height: 23rem;
+    top: 12rem;
+    right: 2rem;
+}
+
+.programs_header {
+    display: flex;
+    gap: 2rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #fff;
+    margin-right: 83px;
+    margin-bottom: 2rem;
+}
+
+.programs_header :nth-child(2) {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.plans_card_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 1066px;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    background: var(--caloryCard);
+    color: #fff;
+    gap: 2rem;
+    padding: 1.5rem;
+    transition: 0.3s;
+}
+
+.plan:nth-child(2) {
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+
+.plans_card_container:hover :nth-child(2) {
+    transform: scale(1);
+}
+
+.plan:nth-child(1):hover,
+.plan:nth-child(2):hover,
+.plan:nth-child(3):hover {
+    transform: scale(1.1);
+}
+
+.plan svg {
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+
+.plan :nth-child(2) {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.plan :nth-child(3) {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.plan :nth-child(5) {
+    font-size: 0.8rem;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feature img {
+    width: 1rem;
+}
+
+.plans_card_container :nth-child(2) svg {
+    fill: #fff;
+}
+
+.plans_card_container :nth-child(2) button {
+    color: orange;
+}
+
+@media screen and (max-width: 768px) {
+
+    .plans_card_container {
+        flex-direction: column;
+    }
+
+    .plans_card_container :nth-child(2) {
+        transform: none;
+    }
+
+    .plan {
+        width: 13rem;
+    }
+
+    .plan:nth-child(1):hover,
+    .plan:nth-child(2):hover,
+    .plan:nth-child(3):hover {
+        transform: none;
+    }
+
+    .programs_header {
+        display: flex;
+        gap: 2rem;
+        font-weight: bold;
+        font-size: 2.5rem;
+        justify-content: center;
+        text-transform: uppercase;
+        font-style: italic;
+        color: #fff;
+        margin-right: 83px;
+        margin-bottom: 2rem;
+    }
+
+    .programs_header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7rem;
+        margin-right: 0;
+    }
+
+    .programs_header> :nth-child(2) {
+        font-size: 1.2rem;
+    }
+}
